@@ -1,0 +1,13 @@
+application: every-vote-counts
+version: 1
+runtime: python27
+threadsafe: no
+api_version: 1
+
+handlers:
+- url: /public
+  static_dir: static
+
+- url: /.*
+  script: helloworld.py
+
